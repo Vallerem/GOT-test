@@ -1,156 +1,140 @@
-
-
 $nav-color: #42525c;
 $menu-color: #4a616c;
-
-body{
+body {
   padding: o;
   margin: 0;
   background: #F6F9FC;
 }
 
 
-
-
 /* navbar - menu (Desktop first) */
 
-
 .navtop {
-  
-    background-color: $nav-color;
-    overflow: hidden;
-      a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 6px 14px;
-        margin: 10px 10px;
-        text-decoration: none;
-        border-right: solid 1px grey;
-
-          &:hover {
-            color: darkcyan;
-          }
-        
-          @media (max-width: 480px) {
-            border-right: none;
-          }
-      }
-      a.top-link-no-bd{
-        margin-right: 50px;
-        border:none;
-        float:right;
-        @media (max-width: 480px) {
-          margin-top: -60px;
-          margin-right: 0px;
-        }
-      }
-      a.top-link{
-        margin-top:18px;
-        }
+  background-color: $nav-color;
+  overflow: hidden;
+  a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 6px 14px;
+    margin: 10px 10px;
+    text-decoration: none;
+    border-right: solid 1px grey;
+    &:hover {
+      color: darkcyan;
+    }
+    @media (max-width: 480px) {
+      border-right: none;
+    }
+  }
+  a.top-link-no-bd {
+    margin-right: 50px;
+    border: none;
+    float: right;
+    @media (max-width: 480px) {
+      margin-top: -60px;
+      margin-right: 0px;
+    }
+  }
+  a.top-link {
+    margin-top: 18px;
+  }
 }
 
-.icon-nav{
+.icon-nav {
   margin-left: 80px;
-  width:30px;
-  height:30px;
-
+  width: 30px;
+  height: 30px;
   @media (max-width: 480px) {
-          width:60px;
-          height:60px;
-          margin-left: 0px;
-          margin-top: 15px;
-        }
+    width:60px;
+    height: 60px;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
 }
 
-.icon-bell{
+.icon-bell {
   @extend .icon-nav;
   @media (max-width: 480px) {
-          margin: 35px 10px 0 0;
-          width:40px;
-          height:40px;
-        }
+    margin: 35px 10px 0 0;
+    width: 40px;
+    height: 40px;
+  }
 }
-   
-.nav-menu{
-   background-color: $menu-color;
-   overflow: hidden;
 
-   a:first-child{
+.nav-menu {
+  background-color: $menu-color;
+  overflow: hidden;
+  a:first-child {
     margin-left: 100px;
     @media (max-width: 480px) {
       margin-left: 20px;
-      }
-   }
-
-   a.active{
-        border-bottom: solid 3px #04D2CF;
-      } 
- 
-   a{
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 6px 14px;
-      margin: 15px 10px 10px 10px;
-      text-decoration: none;
-
-      @media (max-width: 480px) {
-        clear:left;       
-      }  
-   }
-}   
+    }
+  }
+  a.active {
+    border-bottom: solid 3px #04D2CF;
+  }
+  a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 6px 14px;
+    margin: 15px 10px 10px 10px;
+    text-decoration: none;
+    @media (max-width: 480px) {
+      clear:left;
+    }
+  }
+}
 
 
 /* main content (Mobile first) */
 
-
 .button-container {
   margin: 15px 20px;
-  @media (min-width: 480px){
-  margin: 15px 0 10px 100px;
+  @media (min-width: 480px) {
+    margin: 15px 0 10px 100px;
   }
 }
 
-.btn-main{
+.btn-main {
   border: solid 1px $menu-color;
-  color:$menu-color;
+  color: $menu-color;
   border-radius: 6px;
   background: #F6F9FC;
   padding: 10px 20px;
   margin-right: 10px;
-
-  &:hover{
+  &:hover {
     background: $menu-color;
     color: #F6F9FC;
   }
 }
 
+
 /*  Character container */
-.character{
+
+.character {
   float: left;
   background: white;
   border-bottom: solid 1px black;
   width: 400px;
-
-  @media (min-width: 480px){
-  margin: 20px 0 20px 95px;
+  @media (min-width: 480px) {
+    margin: 20px 0 20px 95px;
   }
-
   @media (min-width:480px) and (max-width: 1200px) {
     width: 100%;
     margin: 0 auto;
   }
 }
 
-.character-rest{
+.character-rest {
   @extend .character;
   clear: left;
-  @media (min-width: 480px){
-  margin: -20px 95px;
-  width: 400px;
+  @media (min-width: 480px) {
+    margin: -20px 95px;
+    width: 400px;
   }
   @media (min-width:480px) and (max-width: 1200px) {
     width: 100%;
@@ -158,28 +142,28 @@ body{
   }
 }
 
-.character-rest-next{
+.character-rest-next {
   @extend .character-rest;
   clear: left;
-
-  div.display-info{
-    color:red;
+  div.display-info {
+    color: red;
   }
-  @media (min-width: 480px){
-  margin: 20px 95px;
-  width: 400px;
+  @media (min-width: 480px) {
+    margin: 20px 95px;
+    width: 400px;
   }
   @media (min-width:480px) and (max-width: 1200px) {
     width: 100%;
     margin: 0 auto;
-  }  
+  }
 }
+
 
 /*  Stars  => Optimal implementation should be = form + bd + some jQuery  */
 
 .stars {
   margin-top: 20px;
-  float:left;
+  float: left;
   padding: 5px 0 0 10px;
   display: inline-block;
   font-size: 20px;
@@ -188,19 +172,23 @@ body{
 .stars span:before {
   content: "\2605";
   position: absolute;
-  transition:all 0.4s;
-  color:#04D2CF;
+  transition: all 0.4s;
+  color: #04D2CF;
 }
-.stars span:hover ~ span:before {
+
+.stars span:hover~span:before {
   content: "\2606";
 }
 
+
 /* Character Info */
-.character-info{
-float: left;
+
+.character-info {
+  float: left;
 }
-.char-img{
-  margin-left:10px;
+
+.char-img {
+  margin-left: 10px;
   float: left;
   height: 50px;
   width: 50px;
@@ -208,33 +196,27 @@ float: left;
   padding: 16px 12px;
 }
 
-.infop:focus ~ .char-img {
+.infop:focus~.char-img {
   display: none;
 }
 
-.infop{
+.infop {
   margin-left: -20px;
   padding: 0 34px;
   float: left;
-  @media (min-width:480px){
-  
-  }
+  @media (min-width: 480px) {}
 }
 
-.char-house{
+.char-house {
   font-size: 0.8em;
   margin-top: -4px;
-  color:$menu-color;
+  color: $menu-color;
 }
 
-.no-decor{
-  text-decoration:none;
-  color:black;
+.no-decor {
+  text-decoration: none;
+  color: black;
 }
-
-
-
-
 
 
 /*  Display info 
@@ -242,10 +224,9 @@ float: left;
        ********
 */
 
-
-.display-info{
+.display-info {
   background: white;
-  @media (min-width:1200px){
+  @media (min-width: 1200px) {
     position:absolute;
     top: 125px;
     left: 490px;
@@ -253,42 +234,40 @@ float: left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   @media (min-width:480px) and (max-width: 1200px) {
-    clear:left;
+    clear: left;
     margin: auto;
     border-bottom: solid 1px black;
   }
 }
- 
 
-.char-img-display{
+.char-img-display {
   @extend .char-img;
   height: 100px;
   width: 100px;
   padding: 20px 30px;
 }
 
-.char-display-name{
-  display:inline-block;
+.char-display-name {
+  display: inline-block;
   padding: 5px 0;
   font-size: 19px;
 }
 
-.char-house-display{
+.char-house-display {
   @extend .char-house;
   margin-top: -10px;
 }
 
-.nav-menu-display{
+.nav-menu-display {
   overflow: hidden;
   margin: 50px 0 0 15px;
-
-  a:first-child{
-  margin-left: 30px;
+  a:first-child {
+    margin-left: 30px;
     @media (min-width: 480px) {
       float:left;
-      }
-   }
-   a {
+    }
+  }
+  a {
     float: left;
     display: block;
     text-align: center;
@@ -296,29 +275,29 @@ float: left;
     margin: 5px 10px 10px 10px;
     text-decoration: none;
     color: grey;
-   }
-   a.active{
-        color: black;
-        border-bottom: solid 3px #04D2CF;
-      } 
-
+  }
+  a.active {
+    color: black;
+    border-bottom: solid 3px #04D2CF;
+  }
 }
-.downchar{
-  @media (min-width:480px) and (max-width: 1200px) {
+
+.downchar {
+  @media (min-width: 480px) and (max-width: 1200px) {
     margin-top: 230px;
   }
-  
 }
 
-.display-text{
+.display-text {
   padding: 5px 5px 10px 10px;
   margin: 25px 10px 0 10px;
   border-bottom: solid 2px $nav-color;
-  @media (min-width:800px){
+  @media (min-width: 800px) {
     border-bottom:none;
   }
 }
 
-#tyr , #jon{
-  display:none;
+#tyr,
+#jon {
+  display: none;
 }

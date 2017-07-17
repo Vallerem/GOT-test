@@ -337,6 +337,7 @@ body {
   }
 }
 
-#tyr, #jon {
+#tyr,
+#jon {
   display: none;
 }

@@ -1,204 +1,187 @@
-
-
-
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>A song of ice and fire</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.min.css">
-  </head>
-  <body>
- 
-    
-    <div class="navtop">
-      <a href="#"><span><img class="icon-nav" src="img/tar.png" alt="Targaryen icon"></span></a>
-      <a class="top-link" href="#">Game of Thrones</a>
-      <a class="top-link" href="#">Daenerys Targaryen</a>
-      <a class="top-link-no-bd" href="#"><span><img class="icon-bell" src="img/bell.png" alt="Targaryen icon"></span></a>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A song of ice and fire</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.min.css">
+</head>
+
+<body>
+
+
+  <div class="navtop">
+    <a href="#"><span><img class="icon-nav" src="img/tar.png" alt="Targaryen icon"></span></a>
+    <a class="top-link" href="#">Game of Thrones</a>
+    <a class="top-link" href="#">Daenerys Targaryen</a>
+    <a class="top-link-no-bd" href="#"><span><img class="icon-bell" src="img/bell.png" alt="Targaryen icon"></span></a>
+  </div>
+  <div class="nav-menu">
+    <a class="menu-link active" href="#">Favoritos</a>
+    <a class="menu-link" href="#">Listado de casas</a>
+    <a class="menu-link" href="#">Personajes secundarios</a>
+  </div>
+
+  <div class="button-container">
+    <button type="button" class="btn-main">Top (2)</button>
+    <button type="button" class="btn-main">Sin valorar (3)</button>
+    <button type="button" class="btn-main">Actualizados (4)</button>
+  </div>
+
+
+  <!--Content for DANY-->
+
+  <div class="character">
+    <div class="stars">
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
     </div>
-    <div class="nav-menu">
-      <a class="menu-link active" href="#">Favoritos</a>
-      <a class="menu-link" href="#">Listado de casas</a>
-      <a class="menu-link" href="#">Personajes secundarios</a>
-    </div>
 
-    <div class="button-container">       
-        <button type="button" class="btn-main">Top (2)</button>
-        <button type="button" class="btn-main">Sin valorar (3)</button>
-        <button type="button" class="btn-main">Actualizados (4)</button>      
-    </div>
-
-  
-       <!--Content for DANY-->
-
-      <div class="character">
-          <div class="stars">
-           <span>&#9734;</span>
-              <span>&#9734;</span>
-              <span>&#9734;</span>
-              <span>&#9734;</span>
-              <span>&#9734;</span>
-          </div>
-
-        <div class="character-info">
-          <a class="no-decor" onclick="toggleVisibility('dany');" href="#"><img class="char-img" src="img/dany.jpg" alt="character name">
+    <div class="character-info">
+      <a class="no-decor" onclick="toggleVisibility('dany');" href="#"><img class="char-img" src="img/dany.jpg" alt="character name">
           <div class="infop">
             <p><strong>Daeneys Targaryen</strong></p>
             <p class="char-house">Casa Targaryen Targaryen <br> Targaryen Targaryen</p>
             </a>
-          </div>
-        </div>
-         </div>
+    </div>
+  </div>
+  </div>
 
-         <div class="display-info" id="dany">
-           <img class="char-img-display" src="img/dany.jpg" alt="character name">
-            <p class="char-display-name"><strong>Daeneys Targaryen</strong></p>
-            <p class="char-house-display"><strong>Alias</strong>: Daenerys de la tormenta y apodos varios para rellenar texto.<br> 
-            <strong>Nacimiento</strong>: 284 Washington DC<br>
-            <strong>Familia</strong>: Todos muertos.
-            </p>
-            <div class="nav-menu-display">
-              <a class="menu-link-display active" href="#">Descripción</a>
-              <a class="menu-link-display" href="#">Historia</a>
-              <a class="menu-link-display" href="#">Actriz</a>
-            </div>
-              <div class="display-text">
-                
-            
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            </div>
-         </div>
+  <div class="display-info" id="dany">
+    <img class="char-img-display" src="img/dany.jpg" alt="character name">
+    <p class="char-display-name"><strong>Daeneys Targaryen</strong></p>
+    <p class="char-house-display"><strong>Alias</strong>: Daenerys de la tormenta y apodos varios para rellenar texto.<br>
+      <strong>Nacimiento</strong>: 284 Washington DC<br>
+      <strong>Familia</strong>: Todos muertos.
+    </p>
+    <div class="nav-menu-display">
+      <a class="menu-link-display active" href="#">Descripción</a>
+      <a class="menu-link-display" href="#">Historia</a>
+      <a class="menu-link-display" href="#">Actriz</a>
+    </div>
+    <div class="display-text">
 
 
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
 
+  <div class="character-rest">
+    <div class="stars">
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-         <div class="character-rest">
-          <div class="stars">
-           <span>&#9734;</span>
-              <span>&#9734;</span>
-              <span>&#9734;</span>
-              <span>&#9734;</span>
-              <span>&#9734;</span>
-          </div>
-
-        <div class="character-info">
-          <a class="no-decor" onclick="toggleVisibility('tyr');" href="#"><img class="char-img" src="img/tyr.jpg" alt="character name">
+    <div class="character-info">
+      <a class="no-decor" onclick="toggleVisibility('tyr');" href="#"><img class="char-img" src="img/tyr.jpg" alt="character name">
           <div class="infop">
             <p><strong>Tyrion Lannister</strong></p>
             <p class="char-house">Casa Lannister <br> Targaryen Targaryen</p>
             </a>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+  </div>
 
 
-         <div class="display-info downchar" id="tyr">
-           <img class="char-img-display" src="img/tyr.jpg" alt="character name">
-            <p class="char-display-name"><strong>Tyrion Lannister</strong></p>
-            <p class="char-house-display"><strong>Alias</strong>: Daenerys de la tormenta y apodos varios para rellenar texto.<br> 
-            <strong>Nacimiento</strong>: 284 Washington DC<br>
-            <strong>Familia</strong>: Todos muertos.
-            </p>
-            <div class="nav-menu-display">
-              <a class="menu-link-display active" href="#">Descripción</a>
-              <a class="menu-link-display" href="#">Historia</a>
-              <a class="menu-link-display" href="#">Actriz</a>
-            </div>
-              <div class="display-text">
-                
-            
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            </div>
-         </div>
+  <div class="display-info downchar" id="tyr">
+    <img class="char-img-display" src="img/tyr.jpg" alt="character name">
+    <p class="char-display-name"><strong>Tyrion Lannister</strong></p>
+    <p class="char-house-display"><strong>Alias</strong>: Daenerys de la tormenta y apodos varios para rellenar texto.<br>
+      <strong>Nacimiento</strong>: 284 Washington DC<br>
+      <strong>Familia</strong>: Todos muertos.
+    </p>
+    <div class="nav-menu-display">
+      <a class="menu-link-display active" href="#">Descripción</a>
+      <a class="menu-link-display" href="#">Historia</a>
+      <a class="menu-link-display" href="#">Actriz</a>
+    </div>
+    <div class="display-text">
 
 
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
 
+  <div class="character-rest-next">
+    <div class="stars">
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+      <span>&#9734;</span>
+    </div>
 
-
-
-
-
-
-         <div class="character-rest-next">
-          <div class="stars">
-           <span>&#9734;</span>
-              <span>&#9734;</span>
-              <span>&#9734;</span>
-              <span>&#9734;</span>
-              <span>&#9734;</span>
-          </div>
-
-        <div class="character-info">
-          <a class="no-decor" onclick="toggleVisibility('jon');" href="#"><img class="char-img" src="img/jon.jpg" alt="character name">
+    <div class="character-info">
+      <a class="no-decor" onclick="toggleVisibility('jon');" href="#"><img class="char-img" src="img/jon.jpg" alt="character name">
           <div class="infop">
             <p><strong>Jon de las nieves</strong></p>
             <p class="char-house">Descasado <br></p>
             </a>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+  </div>
 
 
-         <div class="display-info downchar" id="jon">
-           <img class="char-img-display" src="img/jon.jpg" alt="character name">
-            <p class="char-display-name"><strong>Jon de las nieves</strong></p>
-            <p class="char-house-display"><strong>Alias</strong>: Daenerys de la tormenta y apodos varios para rellenar texto.<br> 
-            <strong>Nacimiento</strong>: 284 Washington DC<br>
-            <strong>Familia</strong>: Todos muertos.
-            </p>
-            <div class="nav-menu-display">
-              <a class="menu-link-display active" href="#">Descripción</a>
-              <a class="menu-link-display" href="#">Historia</a>
-              <a class="menu-link-display" href="#">Actriz</a>
-            </div>
-              <div class="display-text">
-                
-            
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            </div>
-         </div>
-
-         
+  <div class="display-info downchar" id="jon">
+    <img class="char-img-display" src="img/jon.jpg" alt="character name">
+    <p class="char-display-name"><strong>Jon de las nieves</strong></p>
+    <p class="char-house-display"><strong>Alias</strong>: Daenerys de la tormenta y apodos varios para rellenar texto.<br>
+      <strong>Nacimiento</strong>: 284 Washington DC<br>
+      <strong>Familia</strong>: Todos muertos.
+    </p>
+    <div class="nav-menu-display">
+      <a class="menu-link-display active" href="#">Descripción</a>
+      <a class="menu-link-display" href="#">Historia</a>
+      <a class="menu-link-display" href="#">Actriz</a>
+    </div>
+    <div class="display-text">
 
 
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
