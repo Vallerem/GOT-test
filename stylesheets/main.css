@@ -1,0 +1,342 @@
+body {
+  padding: o;
+  margin: 0;
+  background: #F6F9FC;
+}
+
+/* navbar - menu (Desktop first) */
+.navtop {
+  background-color: #42525c;
+  overflow: hidden;
+}
+
+.navtop a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 6px 14px;
+  margin: 10px 10px;
+  text-decoration: none;
+  border-right: solid 1px grey;
+}
+
+.navtop a:hover {
+  color: darkcyan;
+}
+
+@media (max-width: 480px) {
+  .navtop a {
+    border-right: none;
+  }
+}
+
+.navtop a.top-link-no-bd {
+  margin-right: 50px;
+  border: none;
+  float: right;
+}
+
+@media (max-width: 480px) {
+  .navtop a.top-link-no-bd {
+    margin-top: -60px;
+    margin-right: 0px;
+  }
+}
+
+.navtop a.top-link {
+  margin-top: 18px;
+}
+
+.icon-nav, .icon-bell {
+  margin-left: 80px;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 480px) {
+  .icon-nav, .icon-bell {
+    width: 60px;
+    height: 60px;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-bell {
+    margin: 35px 10px 0 0;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.nav-menu {
+  background-color: #4a616c;
+  overflow: hidden;
+}
+
+.nav-menu a:first-child {
+  margin-left: 100px;
+}
+
+@media (max-width: 480px) {
+  .nav-menu a:first-child {
+    margin-left: 20px;
+  }
+}
+
+.nav-menu a.active {
+  border-bottom: solid 3px #04D2CF;
+}
+
+.nav-menu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 6px 14px;
+  margin: 15px 10px 10px 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .nav-menu a {
+    clear: left;
+  }
+}
+
+/* main content (Mobile first) */
+.button-container {
+  margin: 15px 20px;
+}
+
+@media (min-width: 480px) {
+  .button-container {
+    margin: 15px 0 10px 100px;
+  }
+}
+
+.btn-main {
+  border: solid 1px #4a616c;
+  color: #4a616c;
+  border-radius: 6px;
+  background: #F6F9FC;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+.btn-main:hover {
+  background: #4a616c;
+  color: #F6F9FC;
+}
+
+/*  Character container */
+.character, .character-rest, .character-rest-next {
+  float: left;
+  background: white;
+  border-bottom: solid 1px black;
+  width: 400px;
+}
+
+@media (min-width: 480px) {
+  .character, .character-rest, .character-rest-next {
+    margin: 20px 0 20px 95px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .character, .character-rest, .character-rest-next {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.character-rest, .character-rest-next {
+  clear: left;
+}
+
+@media (min-width: 480px) {
+  .character-rest, .character-rest-next {
+    margin: -20px 95px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .character-rest, .character-rest-next {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.character-rest-next {
+  clear: left;
+}
+
+.character-rest-next div.display-info {
+  color: red;
+}
+
+@media (min-width: 480px) {
+  .character-rest-next {
+    margin: 20px 95px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .character-rest-next {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*  Stars  => Optimal implementation should be = form + bd + some jQuery  */
+.stars {
+  margin-top: 20px;
+  float: left;
+  padding: 5px 0 0 10px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.stars span:before {
+  content: "\2605";
+  position: absolute;
+  transition: all 0.4s;
+  color: #04D2CF;
+}
+
+.stars span:hover ~ span:before {
+  content: "\2606";
+}
+
+/* Character Info */
+.character-info {
+  float: left;
+}
+
+.char-img, .char-img-display {
+  margin-left: 10px;
+  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 16px 12px;
+}
+
+.infop:focus ~ .char-img, .infop:focus ~ .char-img-display {
+  display: none;
+}
+
+.infop {
+  margin-left: -20px;
+  padding: 0 34px;
+  float: left;
+}
+
+.char-house, .char-house-display {
+  font-size: 0.8em;
+  margin-top: -4px;
+  color: #4a616c;
+}
+
+.no-decor {
+  text-decoration: none;
+  color: black;
+}
+
+/*  Display info 
+       ********
+       ********
+*/
+.display-info {
+  background: white;
+}
+
+@media (min-width: 1200px) {
+  .display-info {
+    position: absolute;
+    top: 125px;
+    left: 490px;
+    width: 750px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .display-info {
+    clear: left;
+    margin: auto;
+    border-bottom: solid 1px black;
+  }
+}
+
+.char-img-display {
+  height: 100px;
+  width: 100px;
+  padding: 20px 30px;
+}
+
+.char-display-name {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 19px;
+}
+
+.char-house-display {
+  margin-top: -10px;
+}
+
+.nav-menu-display {
+  overflow: hidden;
+  margin: 50px 0 0 15px;
+}
+
+.nav-menu-display a:first-child {
+  margin-left: 30px;
+}
+
+@media (min-width: 480px) {
+  .nav-menu-display a:first-child {
+    float: left;
+  }
+}
+
+.nav-menu-display a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 6px 14px;
+  margin: 5px 10px 10px 10px;
+  text-decoration: none;
+  color: grey;
+}
+
+.nav-menu-display a.active {
+  color: black;
+  border-bottom: solid 3px #04D2CF;
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .downchar {
+    margin-top: 230px;
+  }
+}
+
+.display-text {
+  padding: 5px 5px 10px 10px;
+  margin: 25px 10px 0 10px;
+  border-bottom: solid 2px #42525c;
+}
+
+@media (min-width: 800px) {
+  .display-text {
+    border-bottom: none;
+  }
+}
+
+#tyr, #jon {
+  display: none;
+}
